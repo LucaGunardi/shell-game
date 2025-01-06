@@ -5,7 +5,21 @@
   }
   
   body {
-    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url("./houtje.jpg");
+    background-size: cover;
+  }
+
+  #bord {
+    width: 700px;
+    height: 700px;
+    background-image: url("./poker\ achtergrond.avif");
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
   }
 
   .cup {

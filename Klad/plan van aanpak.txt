@@ -1,0 +1,16 @@
+script
+Druk de button voor het starten van het spel
+spel start
+button verdwijnt
+fps 
+van links naar rechts of rechts naar links of blijven staan of helemaal naar de andere kant
+horizontale beweging of in een boogje
+er kan nooit meer dan 1 cup op elke positie staan
+er zijn 3 posities A, B & C
+er zijn iets van 10 bewegingen 
+daarna komt er een vraag op het beeld "Onder welk bekertje ligt het balletje? Klik op de juiste beker"
+Elke beker heeft een waarde gekregen 0 of 1 waarvan er 1 bekertje de waarde 1 heeft gekregen
+door op het bekertje te klikken na de game wordt de waarde met 1 verhoogd, heeft het bekertje dan de waarde 2 gekregen, dan is het antwoord goed en staat er je hebt gewonnen 
+na het klikken verplaatst de beker omhoog en verschijnt er wel of geen balletje eronder.
+button verschijnt weer
+en het spel kan weer herstarten
