@@ -1,9 +1,4 @@
-    // Pre-loader
-window.addEventListener("load", () => {
-    const preloader = document.querySelector(".preloader");
-    preloader.classList.add("preload-finish");
-  });
-  
+    
   // Global variable to track the ball's position
   let ballPosition;
   
@@ -14,33 +9,33 @@ window.addEventListener("load", () => {
   }
   
   // This function lifts the thimbles
-  function thimbleup(x) {
-    x.classList.add("thimbleup");
+  function bekeromhoog(x) {
+    x.classList.add("bekeromhoog");
   }
   
   // This function puts the thimble down
   function thimbledown(x) {
-    x.classList.remove("thimbleup");
+    x.classList.remove("bekeromhoog");
   }
   
   // This function selects one thimble at random, positions the ball under it, and lifts it at the beginning
   function Showball() {
-    document.getElementById("Playbutton").style.pointerEvents = "none";
+    document.getElementById("startknop").style.pointerEvents = "none";
     ballPosition = getRandNum(); // Set the ball's initial position
     let thimb = document.getElementById(`Cup${ballPosition}`);
   
     document
       .getElementById("thimble_ball")
-      .setAttribute("class", `thimble_ball_position-${ballPosition}`);
-    thimb.classList.add("thimbleup");
+      .setAttribute("class", `beker_en_balletje_positie-${ballPosition}`);
+    thimb.classList.add("bekeromhoog");
   
     setTimeout(function () {
-      thimb.classList.remove("thimbleup");
+      thimb.classList.remove("bekeromhoog");
     }, 4000);
     setTimeout(function () {
       document
         .getElementById("thimble_ball")
-        .classList.remove(`thimble_ball_position-${ballPosition}`);
+        .classList.remove(`beker_en_balletje_positie-${ballPosition}`);
     }, 4500);
   }
   
@@ -48,13 +43,13 @@ window.addEventListener("load", () => {
   function resetthimbclass() {
     document
       .getElementById("Cup0")
-      .setAttribute("class", "sewing_thimble thimble-0");
+      .setAttribute("class", "plasticbeker beker-0");
     document
       .getElementById("Cup1")
-      .setAttribute("class", "sewing_thimble thimble-1");
+      .setAttribute("class", "plasticbeker beker-1");
     document
       .getElementById("Cup2")
-      .setAttribute("class", "sewing_thimble thimble-2");
+      .setAttribute("class", "plasticbeker beker-2");
   }
   
   // This function picks a random integer from 0-2
@@ -107,7 +102,7 @@ window.addEventListener("load", () => {
   
   // This function removes the disabled attribute from all thimbles
   function removedisabled() {
-    let removedis = document.getElementsByClassName("sewing_thimble");
+    let removedis = document.getElementsByClassName("plasticbeker");
     for (let i = 0; i < removedis.length; i++) {
       removedis[i].removeAttribute("disabled");
     }
@@ -115,7 +110,7 @@ window.addEventListener("load", () => {
   
   // This function adds the disabled attribute to all thimbles
   function adddisabled() {
-    let addis = document.getElementsByClassName("sewing_thimble");
+    let addis = document.getElementsByClassName("plasticbeker");
     for (let i = 0; i < addis.length; i++) {
       addis[i].setAttribute("disabled", "disabled");
     }
@@ -127,28 +122,28 @@ window.addEventListener("load", () => {
     let winningthimble = document.getElementById(`Cup${ballPosition}`);
     let selectedthimble = document.getElementById(`${x}`);
     let ballpos = document.getElementById("thimble_ball");
-    ballpos.setAttribute("class", `thimble_ball_position-${ballPosition}`); // Set the ball position under the selected thimble
-    selectedthimble.classList.add("thimbleup"); // Lift the selected thimble up
+    ballpos.setAttribute("class", `beker_en_balletje_positie-${ballPosition}`); // Set the ball position under the selected thimble
+    selectedthimble.classList.add("bekeromhoog"); // Lift the selected thimble up
   
     setTimeout(function () {
       if (winningthimble !== selectedthimble) {
         setTimeout(function () {
-          selectedthimble.classList.remove("thimbleup");
+          selectedthimble.classList.remove("bekeromhoog");
         }, 2000); // Bring the selected thimble down after 2 secs
         setTimeout(function () {
-          winningthimble.classList.remove("thimbleup");
+          winningthimble.classList.remove("bekeromhoog");
         }, 2500); // Bring the winning thimble down after 2.5 secs
         alert("Try Again");
-        document.getElementById("Playbutton").style.pointerEvents = "all"; // Make the play button clickable again
+        document.getElementById("startknop").style.pointerEvents = "all"; // Make the play button clickable again
       } else {
         alert("You Won");
         setTimeout(function () {
-          selectedthimble.classList.remove("thimbleup");
+          selectedthimble.classList.remove("bekeromhoog");
         }, 2000); // Bring the selected thimble down after 2 secs
         setTimeout(function () {
-          winningthimble.classList.remove("thimbleup");
+          winningthimble.classList.remove("bekeromhoog");
         }, 2500); // Bring the winning thimble down after 2.5 secs
-        document.getElementById("Playbutton").style.pointerEvents = "all"; // Make the play button clickable again
+        document.getElementById("startknop").style.pointerEvents = "all"; // Make the play button clickable again
       }
     }, 3500);
   }

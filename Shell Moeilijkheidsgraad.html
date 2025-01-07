@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <audio autoplay loop>
+    <source src="Muziek/happy-jazz-music-casino-poker-black-jack-roulette-background-intro-269848.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="JS/P5/p5.min.js"></script>
+  <style>
+    
+    /* Eerste knop */
+    button#button1 {
+      font-family: 'Arial', sans-serif;
+      font-size: 2em;
+      color: #ffffff; 
+      background-color: #c27e59;
+      padding: 20px 150px;
+      border: 0.2em solid rgb(0, 0, 0);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      position: absolute;
+      top: 55%; /* Hoogste positie, 100px boven button2 */
+      left: 50%; /* Perfect in het midden */
+      transform: translate(-50%, -50%);
+    }
+
+    /* Tweede knop */
+    button#button2 {
+      font-family: 'Arial', sans-serif;
+      font-size: 2em;
+      color: #ffffff; 
+      background-color: #c27e59;
+      padding: 20px 92px;
+      border: 0.2em solid rgb(0, 0, 0);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      position: absolute;
+      top: 65.6%; /* Perfect in het midden */
+      left: 50%; /* Perfect in het midden */
+      transform: translate(-50%, -50%);
+    }
+
+    /* Derde knop */
+    button#button3 {
+      font-family: 'Arial', sans-serif;
+      font-size: 2em;
+      color: #ffffff; 
+      background-color: #c27e59;
+      padding: 20px 103px;
+      border: 0.2em solid rgb(0, 0, 0);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      position: absolute;
+      top: 76.2%; /* Laagste positie, 100px onder button2 */
+      left: 50%; /* Perfect in het midden */
+      transform: translate(-50%, -50%);
+    }
+
+    button#button4 {
+      font-family: 'Arial', sans-serif;
+      font-size: 2em;
+      color: #fff;
+      background-color: #c27e59;
+      padding: 20px 180px;
+      border: 0.2em solid rgb(0, 0, 0);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      position: absolute;
+      top: 86.5%; /* Laagste positie, 100px onder button2 */
+      left: 50%; /* Perfect in het midden */
+      transform: translate(-50%, -50%);
+    }
+
+    button#button1:hover {
+      background-color: #7a0d06;
+      color: #ffffff; 
+    }
+
+    button#button2:hover {
+      background-color: #7a0d06; 
+      color: #ffffff; 
+    }
+
+    button#button3:hover {
+      background-color: #7a0d06;
+      color: #ffffff; 
+    }
+
+    button#button4:hover {
+      background-color: #7a0d06;
+      color: #ffffff; 
+    }
+    
+    body {
+       background-image: url(Afbeeldingen/poker\ tafel\ kleed.png);  
+      
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      overflow: hidden;
+      height: 100vh; 
+    }
+
+    h1 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+      font-size: 10em; 
+      color: #fff; 
+      text-align: center;
+      text-transform: uppercase; 
+    }
+    
+    p {
+      text-align: center;
+      font-size: 2em;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: #fff;
+      margin-bottom: -105px;
+    }
+
+
+  </style>
+  <title>Shell Game Moeilijkheidsgraad</title>
+</head>
+<body>
+  <h1>SHELL GAME LEVELS</h1>
+<p> ㅤ</p>
+  <p>De bekertjes bewegen sneller bij een moeilijker level. 
+  </p>
+  <p>Begin makkelijk! Eindig moeilijk!</p>
+ 
+
+  <a href="GameSnakeLG.html">
+  <button id="button1" >Makkie ⭐ </button>
+  </a>
+  
+  <a href="shellgameMIDDELMATIG.html">
+  <button id="button2">Middelmatig ⭐⭐</button>
+</a>
+
+  <a href="GameSnakeLGHARD.html">
+  <button id="button3">Moeilijk ⭐⭐⭐</button>
+</a>
+  
+  <a href="index.html">
+    <button id="button4">MENU</button>
+    </a>
+  
+</body>
+</html>

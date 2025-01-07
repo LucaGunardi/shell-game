@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shell Game</title>
+        <link rel="stylesheet" href="shell.css">
+</head>
+        
+<body>
+  
+  <section class="spelsectie">
+      
+    <h3>SHELL GAME!</h3>
+    <div class="spelcontainer">
+      <button
+        class="plasticbeker beker-0"
+        id="Cup0"
+        onclick="selectthimble('Cup0')"
+        disabled="disabled"
+      ></button>
+      <button
+        class="plasticbeker beker-1"
+        id="Cup1"
+        onclick="selectthimble('Cup1')"
+        disabled="disabled"
+      ></button>
+      <button
+        class="plasticbeker beker-2"
+        id="Cup2"
+        onclick="selectthimble('Cup2')"
+        disabled="disabled"
+      ></button>
+      <div class="" id="thimble_ball"></div>
+    </div>
+
+    <div class="knoppencontainer">
+      <button class="startknop" id="startknop" onclick="StartGame()">
+        START
+      </button>
+      
+     <a href="Shell Moeilijkheidsgraad.html"><button class="startknop">MENU</button></a>
+  </section>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>

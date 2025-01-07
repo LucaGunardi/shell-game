@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <audio autoplay loop>
+    <source src="Muziek/happy-jazz-music-casino-poker-black-jack-roulette-background-intro-269848.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="JS/P5/p5.min.js"></script>
+  <style>
+    
+    /* Eerste knop */
+    button#button1 {
+      font-family: 'Arial', sans-serif;
+      font-size: 2em;
+      color: #060708; /* Blauwe tekstkleur */
+      background-color: #c27e59;
+      padding: 20px 150px;
+      border: 0.2em solid rgb(0, 0, 0);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      position: absolute;
+      top: 90%; /* Hoogste positie, 100px boven button2 */
+      left: 50%; /* Perfect in het midden */
+      transform: translate(-50%, -50%);
+    }
+
+   
+    
+
+    button#button1:hover {
+      background-color: #7a0d06; /* Achtergrondkleur veranderen bij hover, pas aan indien nodig */
+      color: #ffffff; /* Tekstkleur veranderen bij hover, pas aan indien nodig */
+    }
+
+    
+    body {
+      background-image: url(Afbeeldingen/poker\ tafel\ kleed.png);  /* Vervang met het pad naar jouw afbeelding */
+      
+      background-size: cover; /* Hiermee wordt de afbeelding op de achtergrond bedekt */
+      background-position: center; /* Hiermee wordt de afbeelding in het midden geplaatst */
+      background-repeat: no-repeat; /* Hiermee wordt herhaling van de afbeelding voorkomen */
+      margin: 0;
+      overflow: hidden;
+      height: 100vh; /* Hiermee wordt de hoogte van de body ingesteld op 100% van de viewport hoogte */
+    }
+
+    h1 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Gebruik Fira Code als lettertype */
+      font-size: 11em; /* Pas de grootte aan zoals gewenst */
+      color: #fff; /* Tekstkleur, vervang door je voorkeur */
+      text-align: center;
+      text-transform: uppercase; /* Zet tekst om naar hoofdletters */
+      /* outline: 5px solid #ffffff; */
+      
+    }
+
+    p {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color:#fff;
+      text-align: center;
+      font-size: 2em;
+      font-family: 'Fira Code', monospace;
+    }
+
+    .image-container {
+      text-align: center;
+    }
+  </style>
+  <title>Shell Game Uitleg</title>
+</head>
+<body>
+  
+  <h1>SHELL GAME UITLEG</h1>
+    <p>Klik op start en kijk waar de bal naartoe gaat.</p>
+    <p>Als het schuiven stopt klik je op de beker waar de bal is. </p>
+    <p>Je score gaat omhoog bij elke gewonnen spel.</p>
+    <p>Je score stopt wanneer je verkeerd kiest, je highscore is je hoogst behaalde score.</p>
+    <p>Als het te makkelijk wordt, kan je door naar het volgende level, succes!.</p>
+    
+ 
+  
+  <a href="index.html">
+  <button id="button1">MENU</button>
+  </a>
+  
+  
+  
+</body>
+</html>
