@@ -1,31 +1,166 @@
-#game {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
-  }
-  
-  h1 {
-    color: white;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .body {
-    display: grid;
-    height: 100vh;
-    margin: 0;
-    place-items: center;
-  }
+.main {
+  align-content: center;
+}
 
-  .game {
-    height: 100vh;
-    display: flex;
-    background: url(Afbeeldingenv2/bieropslag.avif);
-    background-size: cover;
-    place-items: center;
-    align-items: center;
-    flex-direction: column;
-    min-height:50em;
-    font-size: 17px;
-    
+.body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
+h3 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15em;
+  top: 0em;
+  margin-top: 0em;
+  color: #fff;
+  text-shadow: 3em 7em 3em #81838d;
+}
+
+
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
   }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.game_section {
+  width: 100%;
+  height: 120vh;
+  place-items: center;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  min-height: 54.4375em;
+  background: url(Afbeeldingen/poker\ tafel\ kleed.png );
+  background-size:cover;
+  font-size: 16px;
+}
+
+.game_container {
+  position: absolute;
+  top: 10.4375em;
+  width: 52.5em;
+  height: 28.75em;
+  direction: ltr;
+  overflow: hidden;
+  background: url(Afbeeldingen/) no-repeat center;
+  background-size: contain;
+  background-position-y: 14em;
+  border-radius: 0em 0em 12em 12em;
+}
+
+.sewing_thimble {
+  background: url(Afbeeldingen/bekertje.png) no-repeat fixed center;
+  background-size: cover;
+  border: none;
+  position: absolute;
+  top: 11.875em;
+  z-index: 4;
+  width: 12em;
+  height: 13.5em;
+  font-size: inherit;
+  will-change: transform, top, left;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.thimble-0 {
+  left: 9.5em;
+}
+
+.thimble-1 {
+  top: 13.5em;
+  left: 22em;
+}
+
+.thimble-2 {
+  left: 34.3em;
+}
+
+.thimbleup {
+  transform: translateY(-3em);
+}
+
+.thimble_ball_position-0 {
+  background: url(Afbeeldingen/balletje.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+  left: -1.6em;
+  top: 10.5em;
+  width: 30em;
+  height: 20em;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.thimble_ball_position-1 {
+  background: url(Afbeeldingen/balletje.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+  left: 10.9em;
+  top: 12.5em;
+  width: 30em;
+  height: 20em;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.thimble_ball_position-2 {
+  background: url(Afbeeldingen/balletje.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+  left: 23em;
+  top: 10.5em;
+  width: 30em;
+  height: 20em;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.pbutton_container {
+  padding-bottom: 1.5625em;
+  margin-top: 0.6875em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10em 0em 0em;
+}
+
+.Playbutton {
+  cursor: default;
+  border: 0.125em solid #81838d;
+  text-decoration: none;
+  text-shadow: 0em 0em 0.125em #434b5b;
+  pointer-events: all;
+  position: relative;
+  cursor: pointer;
+  padding: 0.75em 0.625em 0.625em;
+  min-width: 15.875em;
+  margin: 0.9375em 0em 0em;
+  border: 0.3em solid rgb(0, 0, 0);
+  border-radius: 0.4375em;
+  background: url(Afbeeldingen/bruin.png);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: large;
+ 
+}
