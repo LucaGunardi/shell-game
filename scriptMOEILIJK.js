@@ -42,7 +42,7 @@ function getRandomNumber() {
 
 // Deze functie husselt de bekers op een bepaalde snelheid.
 function husselen() {
-    mix = setInterval(KiesWillekeurigeBekers, 1000);
+    mix = setInterval(KiesWillekeurigeBekers, 500);
 }
 
 // Deze functie kiest twee bekers uit en wisselt ze om.
@@ -75,7 +75,7 @@ function KiesWillekeurigeBekers() {
         husselteller++;
 
         // Bij een bepaald aantal hussels stopt het husselen.
-        if (husselteller > 10) {
+        if (husselteller > 15) {
             clearInterval(mix);
             // En het aantal hussels reset weer terug naar 0.
             husselteller = 0;

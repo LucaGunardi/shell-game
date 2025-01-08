@@ -13,23 +13,11 @@ h3 {
   color: #fff;
 }
 
-/* Safari */
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
+.p {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 3em;
+  color: #fff;
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .spelsectie {
@@ -53,7 +41,6 @@ h3 {
   height: 28.75em;
   direction: ltr;
   overflow: hidden;
-  background: url(Afbeeldingen/) no-repeat center;
   background-size: contain;
   background-position-y: 14em;
   border-radius: 0em 0em 12em 12em;
@@ -74,20 +61,20 @@ h3 {
   cursor: pointer;
 }
 
-.beker-0 {
+.beker0 {
   left: 9.5em;
 }
 
-.beker-1 {
+.beker1 {
   top: 13.5em;
   left: 22em;
 }
 
-.beker-2 {
+.beker2 {
   left: 34.3em;
 }
 
-.bekeromhoog {
+.bekerOmhoog {
   transform: translateY(-3em);
 }
 
@@ -153,5 +140,7 @@ h3 {
   color: rgb(255, 255, 255);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: large;
+  top: -3em;
  
 }
+

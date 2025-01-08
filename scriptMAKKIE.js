@@ -75,7 +75,7 @@ function KiesWillekeurigeBekers() {
         husselteller++;
 
         // Bij een bepaald aantal hussels stopt het husselen.
-        if (husselteller > 10) {
+        if (husselteller > 5) {
             clearInterval(mix);
             // En het aantal hussels reset weer terug naar 0.
             husselteller = 0;
